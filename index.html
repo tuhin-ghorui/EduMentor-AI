@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMentor AI - Learn Smarter with AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <h2>EduMentor AI</h2>
+            </div>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar glassmorphism">
+        <div class="container">
+            <div class="logo">
+                <h2>EduMentor AI</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#demo">Demo</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="typing-text">Learn Smarter with AI</h1>
+                <p>Personalized education for everyone. Get instant help from our AI tutor, anytime, anywhere. Supporting SDG 4: Quality Education.</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50,000+</div>
+                        <div class="stat-label">Questions Solved</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Satisfaction</div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary premium-btn" onclick="scrollToSection('demo')">Get Started</button>
+                    <button class="btn btn-secondary premium-btn" onclick="scrollToSection('demo')">Try Demo</button>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <div class="floating-cards">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Tutor</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-robot"></i>
+                        <span>AI Powered</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-brain"></i>
+                        <span>Smart Learning</span>
+                    </div>
+                </div>
+                <div class="student-illustration">
+                    <div class="ai-avatar">
+                        <div class="avatar-glow"></div>
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="ai-elements">
+                        <div class="ai-circle circle-1"></div>
+                        <div class="ai-circle circle-2"></div>
+                        <div class="ai-circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About SDG Section -->
+    <section id="sdg" class="sdg-section">
+        <div class="container">
+            <div class="sdg-content">
+                <h2>Supporting SDG 4: Quality Education</h2>
+                <p>Many students lack access to personalized tutors, guidance, and structured learning resources. EduMentor AI bridges this gap by providing 24/7 AI-powered learning support, making quality education accessible to everyone, everywhere.</p>
+                <div class="sdg-stats">
+                    <div class="stat">
+                        <h3>2.2 Billion</h3>
+                        <p>People lack access to quality education worldwide</p>
+                    </div>
+                    <div class="stat">
+                        <h3>AI-Powered</h3>
+                        <p>Personalized learning for all</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Available anytime, anywhere</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Chat Tutor</h3>
+                    <p>Get instant answers to your questions with our intelligent AI tutor that understands your learning style.</p>
+                </div>
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Personalized Learning Paths</h3>
+                    <p>Custom learning journeys tailored to your goals, pace, and current knowledge level.</p>
+                </div>
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Quiz Generator</h3>
+                    <p>Create custom quizzes to test your knowledge and track your progress over time.</p>
+                </div>
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Study Planner</h3>
+                    <p>AI-powered study schedules that adapt to your availability and learning objectives.</p>
+                </div>
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Career Guidance</h3>
+                    <p>Get personalized career advice and explore educational paths that match your interests.</p>
+                </div>
+                <div class="feature-card premium-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Learning Support</h3>
+                    <p>Learn at your own pace with round-the-clock access to educational resources and support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <h3>Ask Question</h3>
+                    <p>Type your question or describe what you need help with in natural language.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <h3>AI Understands</h3>
+                    <p>Our advanced AI analyzes your query and understands your learning context.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <h3>Get Smart Learning Response</h3>
+                    <p>Receive personalized, step-by-step guidance tailored to your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo AI Tutor Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2>Try Our AI Tutor</h2>
+            <div class="chat-container premium-chat">
+                <div class="chat-header">
+                    <div class="ai-avatar-small">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="chat-info">
+                        <span class="chat-name">EduMentor AI Tutor</span>
+                        <span class="chat-status">Online</span>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message ai-message premium-bubble">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Hello! I'm EduMentor AI, your intelligent learning companion. I can help you with math, science, coding, history, languages, and much more. Ask me anything related to your studies!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Type your question here..." onkeypress="handleKeyPress(event)">
+                    <button onclick="sendMessage()" class="send-btn premium-send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Preview Section -->
+    <section id="dashboard" class="dashboard-section">
+        <div class="container">
+            <h2>Your Learning Dashboard</h2>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="75"></div>
+                    </div>
+                    <p>75% Complete</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Completed Quizzes</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="85"></div>
+                    </div>
+                    <p>24/28 This Month</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Weekly Goals</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="70"></div>
+                    </div>
+                    <p>5/7 Achieved</p>
+                </div>
+                <div class="dashboard-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Skills Improving</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="90"></div>
+                    </div>
+                    <p>12/13 Areas Mastered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2>What Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"EduMentor AI has completely transformed my learning experience. The personalized guidance and 24/7 availability helped me ace my exams!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM2MzY2RjEiLz4KPHBhdGggZD0iTTIwIDIwQzIyLjc2MTQgMjAgMjUgMTcuNzYxNCAyNSAxNUMyNSAxMi4yMzg2IDIyLjc2MTQgMTAgMjAgMTBDMTcuMjM4NiAxMCAxNSAxMi4yMzg2IDE1IDE1QzE1IDE3Ljc2MTQgMTcgMjAgMTcgMjAgMjBaIiBmaWxsPSIjZmZmZmZmIi8+Cjwvc3ZnPgo=" alt="Student 1">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Computer Science Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The AI tutor explains concepts so clearly. It's like having a personal teacher available whenever I need help with my studies."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM2MzY2RjEiLz4KPHBhdGggZD0iTTIwIDIwQzIyLjc2MTQgMjAgMjUgMTcuNzYxNCAyNSAxNUMyNSAxMi4yMzg2IDIyLjc2MTQgMTAgMjAgMTBDMTcuMjM4NiAxMCAxNSAxMi4yMzg2IDE1IDE1QzE1IDE3Ljc2MTQgMTcgMjAgMTcgMjAgMjBaIiBmaWxsPSIjZmZmZmZmIi8+Cjwvc3ZnPgo=" alt="Student 2">
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <p>Engineering Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Thanks to EduMentor AI, I finally understand math concepts that were confusing me for years. The step-by-step explanations are amazing!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM2MzY2RjEiLz4KPHBhdGggZD0iTTIwIDIwQzIyLjc2MTQgMjAgMjUgMTcuNzYxNCAyNSAxNUMyNSAxMi4yMzg2IDIyLjc2MTQgMTAgMjAgMTBDMTcuMjM4NiAxMCAxNSAxMi4yMzg2IDE1IDE1QzE1IDE3Ljc2MTQgMTcgMjAgMTcgMjAgMjBaIiBmaWxsPSIjZmZmZmZmIi8+Cjwvc3ZnPgo=" alt="Student 3">
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <p>High School Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content premium-contact">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Get In Touch</h3>
+                        <p>Have questions about EduMentor AI? We'd love to hear from you!</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>support@edumentor.ai</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>San Francisco, CA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <form class="contact-form premium-form" id="contact-form">
+                        <h3>Send us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary premium-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>EduMentor AI</h3>
+                    <p>Empowering education through AI technology. Supporting SDG 4: Quality Education for all.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduMentor AI. All rights reserved. | Supporting United Nations SDG 4</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" id="dark-mode-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
